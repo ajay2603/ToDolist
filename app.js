@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://ajay_03:ajay@cluster0.dtjid1z.mongodb.net/toDoList",{ useNewUrlParser: true, useUnifiedTopology: true }).then(()=> console.log("Server connected")).catch(err => console.log(err));
+mongoose.connect("connector string",{ useNewUrlParser: true, useUnifiedTopology: true }).then(()=> console.log("Server connected")).catch(err => console.log(err));
 
 const listSchema = {
   name: String
